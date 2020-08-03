@@ -11,6 +11,7 @@ function parallelRequests(urls, limit) {
         function makeRequest(from, amount) {
             if (from >= filteredUrls.length || amount === 0) {
                 resolve(result);
+                return;
             }
             
             for (let i = from; i < from + amount; i++) {
@@ -26,6 +27,6 @@ function parallelRequests(urls, limit) {
             }
         }
         
-        makeRequest(0, limit > urls.length ? urls.length : limit);
+        makeRequest(0, limit > filteredUrls.length ? filteredUrls.length : limit);
     });
 }
