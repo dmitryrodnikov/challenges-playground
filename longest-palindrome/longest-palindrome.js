@@ -1,7 +1,7 @@
 // Straightforward solution:
-// Write letters to dict with number of occurences as value
-// If occurences is even number, than we can add them to total count (because they can be on both sides of palindrome)
-// If occurences is odd, then the longest one should be in center
+// Write letters to dict with number of occurrences as value
+// If occurrences is even number, than we can add them to total count (because they can be on both sides of palindrome)
+// If occurrences is odd, then the longest one should be in center
 // All other odd numbers should be added to count but -1, so they will be even;
 
 const isEven = (n) => {
