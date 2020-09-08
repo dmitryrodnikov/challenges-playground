@@ -39,7 +39,7 @@ var sortedArrayToBST = function(nums) {
 
         node.val = arr[mid];
         node.left = step(arr.slice(0, mid));
-        node.right = step(arr.slice(mid + 1, arr.length));
+        node.right = step(arr.slice(mid + 1));
         return node;
     }
 
